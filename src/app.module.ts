@@ -10,13 +10,13 @@ import { CollegeWiseCourse } from './entities/college-wise-course.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'dpg-ctsgaqrqf0us73ds9b10-a',
       port: 5432,
-      username: 'postgres',
-      password: 'root', 
-      database: 'college_data',
+      username: 'college_db_3gz8_user',
+      password: 'e2tRPjQ3vtVcREyl1lWuv4n1KFVAMb6O',
+      database: 'college_db_3gz8',
       entities: [College, CollegePlacement, CollegeWiseCourse],
-      synchronize: false, 
+      synchronize: false,
     }),
     TypeOrmModule.forFeature([College, CollegePlacement, CollegeWiseCourse]),
   ],
